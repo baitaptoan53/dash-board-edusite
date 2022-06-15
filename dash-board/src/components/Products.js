@@ -7,7 +7,9 @@ import {
   EditButton,
   TextInput,
   Create,
+  DeleteButton
 } from "react-admin";
+
 
 export const listProducts = (props) => (
   <List {...props}>
@@ -18,6 +20,7 @@ export const listProducts = (props) => (
       <TextField source="description" />
 
       <EditButton basePath="/products" />
+      <DeleteButton basePath="/products" />
     </Datagrid>
   </List>
 );

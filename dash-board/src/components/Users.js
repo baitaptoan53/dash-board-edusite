@@ -8,6 +8,7 @@ import {
   EditButton,
   TextInput,
   Create,
+  DeleteButton,
 } from "react-admin";
 
 export const listUsers = (props) => (
@@ -16,7 +17,9 @@ export const listUsers = (props) => (
       <TextField source="id" />
       <TextField source="name" />
       <TextField source="email" />
+      
       <EditButton basePath="/users" />
+      <DeleteButton basePath="/users" />
     </Datagrid>
   </List>
 );

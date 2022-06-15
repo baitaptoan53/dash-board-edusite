@@ -116,23 +116,31 @@
   "tags": [
     {
       "id": "6",
-      "name": "Tag 6"
+      "name": "WEB"
     },
     {
       "id": "7",
-      "name": "Tag 7"
+      "name": "PHOTOGRAPHY"
     },
     {
       "id": "8",
-      "name": "Tag 8"
+      "name": "CSS"
     },
     {
       "id": "9",
-      "name": "Tag 9"
+      "name": "RESPONSIVE"
     },
     {
       "id": "10",
-      "name": "Tag 10"
+      "name": "HTML"
+    },
+    {
+      "id": "1",
+      "name": "WEBSITE"
+    },
+    {
+      "id": "2",
+      "name": "REACTJS"
     }
   ]
 }
