@@ -14,6 +14,10 @@ import {
 
 export const listTags = (props) => (
   <List {...props}>
+  <h2 className="mb-2">
+      <i className="me-2 p-1"></i>
+      Tags list
+    </h2>
     <Datagrid>
       <TextField source="id" />
       <TextField source="name" />
@@ -26,6 +30,10 @@ export const listTags = (props) => (
 
 export const editTags = (props) => (
   <Edit {...props}>
+  <h2 className="mb-2">
+      <i className="me-2 p-1"></i>
+      Tags Edit
+    </h2>
     <SimpleForm>
       <TextInput source="id" />
       <TextInput source="name" />
@@ -35,6 +43,10 @@ export const editTags = (props) => (
 
 export const createTags = (props) => (
   <Create {...props}>
+  <h2 className="mb-2">
+      <i className="me-2 p-1"></i>
+      Tags Create
+    </h2>
     <SimpleForm>
       <TextInput source="id" />
       <TextInput source="name" />

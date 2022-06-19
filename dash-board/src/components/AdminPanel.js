@@ -7,6 +7,7 @@ import TrendingDownIcon from "@mui/icons-material/TrendingDown";
 import TrendingUpIcon from "@mui/icons-material/TrendingUp";
 import SsidChartIcon from "@mui/icons-material/SsidChart";
 import MenuBookIcon from "@mui/icons-material/MenuBook";
+import HomeIcon from "@mui/icons-material/Home";
 export const data = {
   labels: [
     "Course HTML CSS",
@@ -89,64 +90,80 @@ export const data2 = {
     },
   ],
 };
+
 function AdminPanel() {
   return (
-    <div className="container mt-4 ">
-      <div className="mb-4 row justify-content-between text-center">
-        <div
-          className="col-md-3 rounded mb-4"
-          style={{ backgroundColor: "#b5d5e1" }}
-        >
-          <p>
-            Total Tales
-            <i className="ms-3">
-              <LocalOfferIcon />
-            </i>
-          </p>
-          <h3>
-            $320,210 <TrendingDownIcon />
-          </h3>
-        </div>
-        <div
-          className="col-md-3 rounded mb-4"
-          style={{ backgroundColor: "#b9e303" }}
-        >
-          <p>
-            Total Profit
-            <i className="ms-3">
-              <SsidChartIcon />
-            </i>
-          </p>
-          <h3>
-            $30,210 <TrendingDownIcon />
-          </h3>
-        </div>
-        <div
-          className="col-md-3 rounded mb-4"
-          style={{ backgroundColor: "#b5d5e1" }}
-        >
-          <p>
-            Total Orders
-            <i className="ms-3">
-              <MenuBookIcon />
-            </i>
-          </p>
-          <h3>
-            610 <TrendingUpIcon />{" "}
-          </h3>
-        </div>
-      </div>
-      <div className="row">
-        <div className="col-md-6">
-          <h2 className="text-center ">Sales by Course</h2>
-          <div className="col-md-12">
-            <Doughnut data={data} />
+    <div>
+      <div className="container mt-4 ">
+        <h2 className="mb-3">
+          <i className="me-2">
+            <HomeIcon />
+          </i>
+          Dashboard
+        </h2>
+        <div className="mb-4 row justify-content-between text-center">
+          <div
+            className="col-md-3 rounded mb-4"
+            style={{
+              background: "linear-gradient(to right, #a8ff78, #78ffd6)",
+            }}
+          >
+            <p>
+              Total Tales
+              <i className="ms-3">
+                <LocalOfferIcon />
+              </i>
+            </p>
+            <h3>
+              $320,210 <TrendingDownIcon />
+            </h3>
+          </div>
+          <div
+            className="col-md-3 rounded mb-4"
+            style={{
+              backgroundColor: " #0093E9",
+              background: "linear-gradient(160deg, #0093E9 0%, #80D0C7 100%)",
+            }}
+          >
+            <p>
+              Total Profit
+              <i className="ms-3">
+                <SsidChartIcon />
+              </i>
+            </p>
+            <h3>
+              $30,210 <TrendingDownIcon />
+            </h3>
+          </div>
+          <div
+            className="col-md-3 rounded mb-4"
+            style={{
+              background: "linear-gradient(to right, #9796f0, #fbc7d4)",
+            }}
+          >
+            <p>
+              Total Orders
+              <i className="ms-3">
+                <MenuBookIcon />
+              </i>
+            </p>
+            <h3>
+              610 <TrendingUpIcon />{" "}
+            </h3>
           </div>
         </div>
-        <div className="col-md-6">
-          <h2 className="text-center">Sales of Course for the week</h2>
-          <div className="col-md-12">
-            <Pie data={data2} />
+        <div className="row">
+          <div className="col-md-6">
+            <h2 className="text-center ">Sales by Course</h2>
+            <div className="col-md-12">
+              <Doughnut data={data} />
+            </div>
+          </div>
+          <div className="col-md-6">
+            <h2 className="text-center">Sales of Course for the week</h2>
+            <div className="col-md-12">
+              <Pie data={data2} />
+            </div>
           </div>
         </div>
       </div>

@@ -7,12 +7,18 @@ import {
   EditButton,
   TextInput,
   Create,
-  DeleteButton
+  DeleteButton,
+  SearchInput,
 } from "react-admin";
-
-
+const postFilters = [
+  <SearchInput source="id" alwaysOn />
+];
 export const listProducts = (props) => (
-  <List {...props}>
+  <List {...props} filters={postFilters}>
+    <h2 className="mb-2">
+      <i className="me-2 p-1"></i>
+      Products list
+    </h2>
     <Datagrid>
       <TextField source="id" />
       <TextField source="name" />
@@ -27,6 +33,10 @@ export const listProducts = (props) => (
 
 export const editProduct = (props) => (
   <Edit {...props}>
+  <h2 className="mb-2">
+      <i className="me-2 p-1"></i>
+      Products Edit
+    </h2>
     <SimpleForm>
       <TextInput source="name" />
       <TextInput source="price" />
@@ -37,6 +47,10 @@ export const editProduct = (props) => (
 
 export const createProduct = (props) => (
   <Create {...props}>
+  <h2 className="mb-2">
+      <i className="me-2 p-1"></i>
+      Products Create
+    </h2>
     <SimpleForm>
       <TextInput source="name" />
       <TextInput source="price" />
