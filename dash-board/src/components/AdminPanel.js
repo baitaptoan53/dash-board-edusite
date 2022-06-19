@@ -92,51 +92,51 @@ export const data2 = {
 function AdminPanel() {
   return (
     <div className="container mt-4 ">
-      <div className="row">
-        <div className="mb-4 row justify-content-between text-center">
-          <div
-            className="col-md-3 rounded"
-            style={{ backgroundColor: "#b5d5e1" }}
-          >
-            <p>
-              Total Tales
-              <i className="ms-3">
-                <LocalOfferIcon />
-              </i>
-            </p>
-            <h3>
-              $320,210 <TrendingDownIcon />
-            </h3>
-          </div>
-          <div
-            className="col-md-3 rounded"
-            style={{ backgroundColor: "#b9e303" }}
-          >
-            <p>
-              Total Profit
-              <i className="ms-3">
-                <SsidChartIcon />
-              </i>
-            </p>
-            <h3>
-              $10,210 <TrendingDownIcon />
-            </h3>
-          </div>
-          <div
-            className="col-md-3 rounded"
-            style={{ backgroundColor: "#b5d5e1" }}
-          >
-            <p>
-              Total Orders
-              <i className="ms-3">
-                <MenuBookIcon />
-              </i>
-            </p>
-            <h3>
-              610 <TrendingUpIcon />{" "}
-            </h3>
-          </div>
+      <div className="mb-4 row justify-content-between text-center">
+        <div
+          className="col-md-3 rounded mb-4"
+          style={{ backgroundColor: "#b5d5e1" }}
+        >
+          <p>
+            Total Tales
+            <i className="ms-3">
+              <LocalOfferIcon />
+            </i>
+          </p>
+          <h3>
+            $320,210 <TrendingDownIcon />
+          </h3>
         </div>
+        <div
+          className="col-md-3 rounded mb-4"
+          style={{ backgroundColor: "#b9e303" }}
+        >
+          <p>
+            Total Profit
+            <i className="ms-3">
+              <SsidChartIcon />
+            </i>
+          </p>
+          <h3>
+            $30,210 <TrendingDownIcon />
+          </h3>
+        </div>
+        <div
+          className="col-md-3 rounded mb-4"
+          style={{ backgroundColor: "#b5d5e1" }}
+        >
+          <p>
+            Total Orders
+            <i className="ms-3">
+              <MenuBookIcon />
+            </i>
+          </p>
+          <h3>
+            610 <TrendingUpIcon />{" "}
+          </h3>
+        </div>
+      </div>
+      <div className="row">
         <div className="col-md-6">
           <h2 className="text-center ">Sales by Course</h2>
           <div className="col-md-12">
