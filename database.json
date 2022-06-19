@@ -64,8 +64,8 @@
   "users": [
     {
       "id": "1",
-      "name": "User 1",
-      "email": "email_users 1"
+      "name": "Nguyen Xuan Ngoc",
+      "email": "baitaptoan53@gmail.com"
     },
     {
       "id": "2",
@@ -141,6 +141,14 @@
     {
       "id": "2",
       "name": "REACTJS"
+    }
+  ],
+  "events": [
+    {
+      "id": "432646",
+      "title": "Package delivery",
+      "start": "2020-10-20T08:00:00.000Z",
+      "end": "2020-10-20T09:30:00.000Z"
     }
   ]
 }

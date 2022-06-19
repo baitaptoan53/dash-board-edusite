@@ -9,6 +9,7 @@ import {
   TextInput,
   Create,
   DeleteButton,
+  
 } from "react-admin";
 
 export const listUsers = (props) => (
@@ -29,7 +30,7 @@ export const editUser = (props) => (
     <SimpleForm>
       <TextInput source="id" />
       <TextInput source="name" />
-      <EmailField source="email" />
+      <TextInput source="email" />
     </SimpleForm>
   </Edit>
 );

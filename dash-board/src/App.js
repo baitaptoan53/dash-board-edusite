@@ -1,6 +1,5 @@
 import { Admin, Resource } from "react-admin";
 import simpleRestProvider from "ra-data-simple-rest";
-
 import {
   listProducts,
   editProduct,
@@ -9,15 +8,14 @@ import {
 import { listUsers, editUser, createUser } from "./components/Users";
 import { listTags, editTags, createTags } from "./components/Tags";
 import AdminPanel from "./components/AdminPanel";
-import BookIcon from '@mui/icons-material/Book';
-import PeopleIcon from '@mui/icons-material/People';
-import StyleIcon from '@mui/icons-material/Style';
+import BookIcon from "@mui/icons-material/Book";
+import PeopleIcon from "@mui/icons-material/People";
+import StyleIcon from "@mui/icons-material/Style";
+import "bootstrap/dist/css/bootstrap.min.css";
 function App() {
   return (
     <div className="App">
       <Admin
-       
-    
         title={"Admin Edusite"}
         dashboard={AdminPanel}
         dataProvider={simpleRestProvider("http://localhost:3000")}
@@ -43,6 +41,7 @@ function App() {
           edit={editTags}
           create={createTags}
         />
+       
       </Admin>
     </div>
   );
